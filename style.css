@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+header .logo {
+    font-size: 30px;
+    color: #308879;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 30px;
+    animation: navlink .3s linear backwards;
+    animation-delay: calc(.7s * var(--i));
+}
+
+header nav ul li a {
+    font-size: 20px;
+    color: #308879;
+    font-weight: bold;
+    transition: letter-spacing .2s;
+}
+
+header nav ul li a:hover {
+    letter-spacing: 2px;
+}
+
+header nav ul li:last-child a {
+    background-color: #308879;
+    color: #fff;
+    padding: 7px 50px;
+    border-radius: 50px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: #308879;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px;
+    background-color: #e9e8ee;
+}
+
+.container .image {
+    margin-top: 150px;
+}
+
+.container .image img {
+    width: 47vw;
+    transition: all 0.4s ease-in-out;
+    animation: float 4s ease-in-out infinite;
+}
+
+.container .image img:hover {
+    transform: scale(1.05);
+}
+
+.container .content {
+    margin-top: -100px;
+    padding-left: 100px;
+}
+
+.container .content h1 {
+    color: #308879;
+    font-size: 70px;
+    animation: fadeIn 1s linear backwards;
+}
+
+.container .content h3 {
+    color: #308879;
+    font-size: 44px;
+    font-weight: 400;
+    animation: fadeIn 1s linear backwards;
+    animation-delay: .2s;
+}
+
+.container .content p {
+    color: #aaa;
+    font-size: 15px;
+    padding: 20px 0;
+    animation: fadeIn 1s linear backwards;
+    animation-delay: .3s;
+}
+
+.container .content button {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: #308879;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    width: 160px;
+    cursor: pointer;
+    transition: .2s;
+    animation: fadeIn 1s linear backwards;
+    animation-delay: .6s;
+}
+
+.container .content button:hover {
+    opacity: .8;
+    letter-spacing: 2px;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-150px) scale(0) rotate(45deg);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: translateY(0px) scale(1) rotate(0deg);
+        transform-origin: left;
+    }
+}
+
+@keyframes navlink {
+    0% {
+        transform: translateY(-150px) scale(0) rotate(-45deg);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: translateY(0px) scale(1) rotate(0deg);
+        transform-origin: left;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 80px 20px;
+        height: auto;
+    }
+
+    .container .image {
+        margin-top: 50px;
+    }
+
+    .container .image img {
+        width: 90vw;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .container .content {
+        margin-top: 40px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .container .content h1 {
+        font-size: 42px;
+    }
+
+    .container .content h3 {
+        font-size: 28px;
+    }
+
+    .container .content p {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .container .content button {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (like very small phones) */
+@media (max-width: 480px) {
+    .container .content h1 {
+        font-size: 32px;
+    }
+
+    .container .content h3 {
+        font-size: 20px;
+    }
+
+    .container .content p {
+        font-size: 13px;
+    }
+
+    .container .content button {
+        width: 120px;
+        height: 36px;
+        font-size: 13px;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    header nav ul li:last-child a {
+        padding: 5px 30px;
+    }
+
+    .container .content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .container .content h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .container .content h3 {
+        font-size: 18px;
+    }
+
+    .container .content p {
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 10px 0;
+    }
+
+    .container .content button {
+        font-size: 13px;
+        width: 120px;
+        padding: 8px 0;
+    }
+
+    .container .image {
+        margin-top: 30px;
+    }
+
+    .container .image img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}

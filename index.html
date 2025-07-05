@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Animated Nature Landing Page</title>
+    <link rel="icon"
+        href="https://images.icon-icons.com/643/PNG/96/leaf-nature-forest-brand-plant_icon-icons.com_59259.png">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Leaf <i class="fas fa-leaf"></i></a>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for hamburger icon -->
+        </div>
+
+        <nav>
+            <ul>
+                <li style="--i:1;"><a href="#">Home</a></li>
+                <li style="--i:2;"><a href="#">About</a></li>
+                <li style="--i:3;"><a href="#">Contact</a></li>
+                <li style="--i:4;"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="content">
+            <h1>Nature</h1>
+            <h3>Landing Page</h3>
+            <p>This animated nature landing page offers a serene and immersive experience, blending calming colors like
+                soft greens, sky blues, and earthy browns with gentle animations that bring the environment to life. As
+                users land on the page, elements like swaying trees, floating leaves, and drifting clouds create a
+                peaceful atmosphere, while subtle transitions and parallax scrolling effects add depth and movement.</p>
+            <a href="#"><button>Read More</button></a>
+        </div>
+
+        <div class="image">
+            <img src="images/img 1.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+        const nav = document.querySelector("header nav");
+        nav.classList.toggle("active");
+    }
+</script>
+
+</html>
