@@ -27,7 +27,7 @@
 
 ## Screenshots
 
-Below is a Preview of **Landing Page - Green Leaf Nature**, Showcasing the Layout and Styling implemented Using pure HTML , CSS and Javascript. 
+Below is a Preview of **Landing Page - Green Leaf Nature**, Showcasing the Layout and Styling Implemented Using pure HTML , CSS and Javascript. 
 The Design focuses on Clean Structure, Responsiveness and Modern Styling.
 
 <img src="images/Screenshot.png" alt="Landing Page - Green Leaf Nature Preview" width="100%" />
