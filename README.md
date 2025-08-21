@@ -1,6 +1,6 @@
 # **Landing Page - Green Leaf Nature**
 
-- This is a beautifully crafted **Green Leaf Nature Landing Page** that provides a Calm, Immersive User Experience With Soothing colors, Nature-themed Visuals and Subtle Animations, it's perfect for Eco brands, Wellness Websites or Environmental Initiatives.
+This is a beautifully crafted **Green Leaf Nature Landing Page** that provides a Calm, Immersive User Experience With Soothing colors, Nature-themed Visuals and Subtle Animations, it's perfect for Eco brands, Wellness Websites or Environmental Initiatives.
 
 ## Features
 
